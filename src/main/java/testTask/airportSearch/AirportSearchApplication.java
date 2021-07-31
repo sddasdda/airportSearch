@@ -30,7 +30,6 @@ public class AirportSearchApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//String file = "C:\\Users\\Александр\\Documents\\demo\\demo\\airports.csv";
 		var file = new File(System.getProperty("user.dir") + "\\airports.dat");
 		LOG.info(file.getPath());
 		if (!file.exists()){
